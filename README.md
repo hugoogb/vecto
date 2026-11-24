@@ -190,3 +190,7 @@ For Claude Desktop, Cursor and other MCP clients, add this to the MCP config:
 3. **Trace.** Mono images go through potrace (pure-Python [`potracer`](https://pypi.org/project/potracer/)). Colour images go through [`vtracer`](https://github.com/visioncortex/vtracer).
 4. **Optimise.** [Scour](https://github.com/scour-project/scour) minifies the SVG. The output keeps the source's pixel dimensions, plus a `viewBox`.
 5. **Score.** [resvg](https://github.com/linebender/resvg) renders the result, which is compared against the source (see *Fidelity* above).
+
+## License
+
+[MIT](LICENSE)

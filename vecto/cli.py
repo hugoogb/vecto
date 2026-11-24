@@ -214,7 +214,6 @@ def convert(
 
 
 app.command("convert")(convert)
-app.command("single", hidden=True)(convert)  # backwards compatibility
 
 
 # --------------------------------------------------------------------------

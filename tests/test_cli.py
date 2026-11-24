@@ -14,9 +14,9 @@ def test_convert_default_output_and_summary(ring_png):
     assert "fidelity" in res.output
 
 
-def test_legacy_single_command(ring_png, tmp_path):
+def test_threshold_and_preview(ring_png, tmp_path):
     out = tmp_path / "o.svg"
-    res = runner.invoke(app, ["single", str(ring_png), str(out), "--threshold", "128", "--preview"])
+    res = runner.invoke(app, ["convert", str(ring_png), str(out), "--threshold", "128", "--preview"])
     assert res.exit_code == 0, res.output
     assert out.exists() and out.with_suffix(".preview.png").exists()
 
